@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="{% url 'uploadFile' %}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="uploadedFile" multiple>
+        {% csrf_token %}
+        <input type="submit" value="Upload">
+    </form>
+    <form action="">
+        <a href="{% url 'descargarTodoXml' %}">Descargar Todo</a>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nombre de archivo</th>
+                <th>Upload Date & Time</th>
+                <th>Xml</th>
+                <th>Eliminar</th>
+            </tr>
+            {% for file in files %}
+                <tr>
+                    <td>{{ file.id }}</td>
+                    <td>{{ file.title }}</td>
+                    <td>{{ file.dateTimeOfUpload }}</td>
+                    <td><a href="{{file.uploadedFile.url}}" target="_blank">Descargar</a></td>
+                    <td><a href="{% url 'eliminar' file.id %}">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </form>
+    {% endblock %}

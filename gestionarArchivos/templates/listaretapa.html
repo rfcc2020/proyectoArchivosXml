@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="">
+        <a href="../generarInformeEtapa">Descargar Informe</a>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Instalacion</th>
+                <th>Institucion</th>
+                <th>Número de Factura</th>
+                <th>Total</th>
+                <th>Número Cur</th>
+                <th>Persona Encargada</th>
+                <th>Teléfono</th>
+                <th>Servicio para</th>
+            </tr>
+            {% for file in files %}
+                <tr>
+                    <td>{{ file.id }}</td>
+                    <td>{{ file.instalacion }}</td>
+                    <td>{{file.institucion }}</td>
+                    <td>{{ file.factura }}</td>
+                    <td>{{ file.total }}</td>
+                    <td>{{ file.numeroCur }}</td>
+                    <td>{{ file.personaEncargada }}</td>
+                    <td>{{ file.telefono }}</td>
+                    <td>{{ file.direccion }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        {% endblock %}

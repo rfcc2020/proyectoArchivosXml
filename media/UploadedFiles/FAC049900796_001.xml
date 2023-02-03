@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone = "yes"?>
+<autorizacion><estado>AUTORIZADO</estado><numeroAutorizacion>0501202301016005002000120010030401597671021201516</numeroAutorizacion><fechaAutorizacion>2023-01-05T07:22:07</fechaAutorizacion><ambiente>PRODUCCIÓN</ambiente><comprobante>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;factura id="comprobante" version="2.1.0"&gt;
+	&lt;infoTributaria&gt;
+		&lt;ambiente&gt;2&lt;/ambiente&gt;
+		&lt;tipoEmision&gt;1&lt;/tipoEmision&gt;
+		&lt;razonSocial&gt;EMPRESA PÚBLICA MUNICIPAL DE TELECOMUNICACIONES, AGUA POTABLE, ALCANTARILLADO Y SANEAMIENTO DE CUENCA - ETAPA EP&lt;/razonSocial&gt;
+		&lt;ruc&gt;0160050020001&lt;/ruc&gt;
+		&lt;claveAcceso&gt;0501202301016005002000120010030401597671021201516&lt;/claveAcceso&gt;
+		&lt;codDoc&gt;01&lt;/codDoc&gt;
+		&lt;estab&gt;001&lt;/estab&gt;
+		&lt;ptoEmi&gt;003&lt;/ptoEmi&gt;
+		&lt;secuencial&gt;040159767&lt;/secuencial&gt;
+		&lt;dirMatriz&gt;BENIGNO MALO 7-78 Y MARISCAL SUCRE&lt;/dirMatriz&gt;
+	&lt;/infoTributaria&gt;
+	&lt;infoFactura&gt;
+		&lt;fechaEmision&gt;05/01/2023&lt;/fechaEmision&gt;
+		&lt;contribuyenteEspecial&gt;3257&lt;/contribuyenteEspecial&gt;
+		&lt;obligadoContabilidad&gt;SI&lt;/obligadoContabilidad&gt;
+		&lt;tipoIdentificacionComprador&gt;04&lt;/tipoIdentificacionComprador&gt;
+		&lt;razonSocialComprador&gt;EMPRESA ELECTRICA REGIONAL CENTRO SUR C.A.&lt;/razonSocialComprador&gt;
+		&lt;identificacionComprador&gt;0190003809001&lt;/identificacionComprador&gt;
+		&lt;direccionComprador&gt;GRAL.ARTIGAS S-N Y AV. PUMAPUNGO&lt;/direccionComprador&gt;
+		&lt;totalSinImpuestos&gt;659.99&lt;/totalSinImpuestos&gt;
+		&lt;totalDescuento&gt;0.00&lt;/totalDescuento&gt;
+		&lt;totalConImpuestos&gt;
+			&lt;totalImpuesto&gt;
+				&lt;codigo&gt;2&lt;/codigo&gt;
+				&lt;codigoPorcentaje&gt;2&lt;/codigoPorcentaje&gt;
+				&lt;baseImponible&gt;659.99&lt;/baseImponible&gt;
+				&lt;tarifa&gt;12&lt;/tarifa&gt;
+				&lt;valor&gt;79.20&lt;/valor&gt;
+			&lt;/totalImpuesto&gt;
+		&lt;/totalConImpuestos&gt;
+		&lt;propina&gt;0.00&lt;/propina&gt;
+		&lt;importeTotal&gt;739.19&lt;/importeTotal&gt;
+		&lt;moneda&gt;DOLAR&lt;/moneda&gt;
+		&lt;pagos&gt;
+			&lt;pago&gt;
+				&lt;formaPago&gt;20&lt;/formaPago&gt;
+				&lt;total&gt;739.19&lt;/total&gt;
+			&lt;/pago&gt;
+		&lt;/pagos&gt;
+	&lt;/infoFactura&gt;
+	&lt;detalles&gt;
+		&lt;detalle&gt;
+			&lt;codigoPrincipal&gt;4929&lt;/codigoPrincipal&gt;
+			&lt;descripcion&gt;TARIFA BASICA&lt;/descripcion&gt;
+			&lt;cantidad&gt;1.000000&lt;/cantidad&gt;
+			&lt;precioUnitario&gt;9.990000&lt;/precioUnitario&gt;
+			&lt;descuento&gt;0.00&lt;/descuento&gt;
+			&lt;precioTotalSinImpuesto&gt;9.99&lt;/precioTotalSinImpuesto&gt;
+			&lt;detallesAdicionales&gt;
+				&lt;detAdicional nombre="unidad" valor="MES"/&gt;
+			&lt;/detallesAdicionales&gt;
+			&lt;impuestos&gt;
+				&lt;impuesto&gt;
+					&lt;codigo&gt;2&lt;/codigo&gt;
+					&lt;codigoPorcentaje&gt;2&lt;/codigoPorcentaje&gt;
+					&lt;tarifa&gt;12&lt;/tarifa&gt;
+					&lt;baseImponible&gt;9.99&lt;/baseImponible&gt;
+					&lt;valor&gt;1.20&lt;/valor&gt;
+				&lt;/impuesto&gt;
+			&lt;/impuestos&gt;
+		&lt;/detalle&gt;		
+	&lt;/detalles&gt;
+	&lt;infoAdicional&gt;
+		&lt;campoAdicional nombre="FechaMaxPago"&gt;01/02/2023&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="Consumo"&gt;Servicio de Telefonía Fija Diciembre de 2022&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="Instalacion"&gt;T0193134&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="RecaudacionTercero"&gt;33,15&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="Telefono"&gt;4135521&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="Dir Instal"&gt;MAX UHLE  Y AV. PUMAPUNGO&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="MSG ARCOTEL"&gt;Para la atención de reclamos en Telecomunicaciones NO resueltos por el prestador, ingrese su reclamo al link: http://reclamoconsumidor.arcotel.gob.ec/osTicket/, o para información comuníquese con el número telefónico 1800 567 567.&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="MSG:"&gt;Para información y reclamos favor comuníquese al Contact Center de ETAPA EP, marcando al número 100. Descargue sus documentos electrónicos de www.etapa.net.ec&lt;/campoAdicional&gt;
+		&lt;campoAdicional nombre="MENSAJE"&gt;ACTUALIZA TUS DATOS LLAMANDO AL 100 O 2834700&lt;/campoAdicional&gt;
+	&lt;/infoAdicional&gt;
+&lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature952736"&gt;
+&lt;ds:SignedInfo Id="Signature-SignedInfo793213"&gt;
+&lt;ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;
+&lt;ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;
+&lt;ds:Reference Id="SignedPropertiesID502258" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature952736-SignedProperties180642"&gt;
+&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;
+&lt;ds:DigestValue&gt;bN27rDcYJa+10kM2gBTCWzIrym4=&lt;/ds:DigestValue&gt;
+&lt;/ds:Reference&gt;
+&lt;ds:Reference URI="#Certificate1695829"&gt;
+&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;
+&lt;ds:DigestValue&gt;xArHY2aOc0eLuo/byb2m8XSTKtw=&lt;/ds:DigestValue&gt;
+&lt;/ds:Reference&gt;
+&lt;ds:Reference Id="Reference-ID-716163" URI="#comprobante"&gt;
+&lt;ds:Transforms&gt;
+&lt;ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/&gt;
+&lt;/ds:Transforms&gt;
+&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;
+&lt;ds:DigestValue&gt;Q6/o92K5HaeCSUKXe0xCQQ3Bf3s=&lt;/ds:DigestValue&gt;
+&lt;/ds:Reference&gt;
+&lt;/ds:SignedInfo&gt;
+&lt;ds:SignatureValue Id="SignatureValue343244"&gt;
+oR6K4scz/aGdDPWrDIMYz990eVM1q25cl/PIzZzQ7igXlIdKd/ZGW5r1s2otyCa0i+JMMMkiW1ga
+r647OGRKqt6u6ot1Jfmy1cuRak6Ud9wHQ+2ZrDV+kf8Is46UxgGgqOE/YJr6ylYwfw8wvhmQKK/C
+D8/KqA4MEd4aXgVzrQ7JX+rWDPu19vndYfuzKHi0Os6OLZoYg0xzOV5NNAufzGMYdllJluKr3Ohg
+qGKB9tqdWumJt8OLPXI9SyOOpVigh5GOJB8eHgxGHGL6g67opAtA1yW/aNIAKMpYTxhvin3vni+P
+HnRSi36P7MToJOd3FyAyrUjndvMD+ypNY7d+Bw==
+&lt;/ds:SignatureValue&gt;
+&lt;ds:KeyInfo Id="Certificate1695829"&gt;
+&lt;ds:X509Data&gt;
+&lt;ds:X509Certificate&gt;
+MIIKPjCCCCagAwIBAgIEW2yTwzANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
+BAoTGUJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxNzA1BgNVBAsTLkVOVElEQUQgREUgQ0VSVElG
+SUNBQ0lPTiBERSBJTkZPUk1BQ0lPTi1FQ0lCQ0UxDjAMBgNVBAcTBVFVSVRPMSUwIwYDVQQDExxB
+QyBCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMB4XDTIyMDQyMjE5MDUwMloXDTI0MDQyMjE5MzUw
+Mlowga0xCzAJBgNVBAYTAkVDMSIwIAYDVQQKExlCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMTcw
+NQYDVQQLEy5FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04tRUNJQkNFMQ4w
+DAYDVQQHEwVRVUlUTzExMBEGA1UEBRMKMDAwMDQ1MjQ3OTAcBgNVBAMTFU1BWCBKT1ZBTlkgTEVP
+TiBCVUVOTzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKfpRRhYp1stmMNb3ysfU2u/
+E40UII7FqinFcwt21D2r3RW6PcbaAaFFpRSWCmTvpgTp8OEbCkNih617yzndEgqT2+tqVM4ChxqU
+Is8kytSxcWXd/m14i+p2qffpjPhzbAZdDPRIzwY/ZtlU30A/1fwsrf7kYZ1X3E9A+0WsCjVLhYpE
+7ufhGWH3YVFqc/IpOoNqvylgkxZ+V9FEug48AWnkU1MzLmppZPwl6dYbMj59ka0ZLJ0J6WJHSOxZ
+QYvg5MSU8JTz78ZfXRjtv4xIQcFUyTjJ0Z+TzBYx23LJYbi9k9cgpPY2syz4diyuBj6Il+rEBHt9
+w2LiQ8UgZ1FU9+8CAwEAAaOCBW4wggVqMAsGA1UdDwQEAwIHgDBnBgNVHSAEYDBeMFwGCysGAQQB
+gqg7AgIBME0wSwYIKwYBBQUHAgEWP2h0dHA6Ly93d3cuZWNpLmJjZS5lYy9wb2xpdGljYS1jZXJ0
+aWZpY2Fkby9wZXJzb25hLWp1cmlkaWNhLnBkZjCBkQYIKwYBBQUHAQEEgYQwgYEwPgYIKwYBBQUH
+MAGGMmh0dHA6Ly9vY3NwLmVjaS5iY2UuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMD8G
+CCsGAQUFBzABhjNodHRwOi8vb2NzcDEuZWNpLmJjZS5lYy9lamJjYS9wdWJsaWN3ZWIvc3RhdHVz
+L29jc3AwfQYKKwYBBAGCqDsDCgRvE21FTVBSRVNBIFBVQkxJQ0EgTVVOSUNJUEFMIERFIFRFTEVD
+T01VTklDQUNJT05FUyBBR1VBIFBPVEFCTEUgQUxDQU5UQVJJTExBRE8gWSBTQU5FQU1JRU5UTyBE
+RSBDVUVOQ0EgIEVUQVBBIEVQMB0GCisGAQQBgqg7AwsEDxMNMDE2MDA1MDAyMDAwMTAaBgorBgEE
+AYKoOwMBBAwTCjAxMDE2OTY0MzMwGgYKKwYBBAGCqDsDAgQMEwpNQVggSk9WQU5ZMBQGCisGAQQB
+gqg7AwMEBhMETEVPTjAVBgorBgEEAYKoOwMEBAcTBUJVRU5PMDkGCisGAQQBgqg7AwUEKxMpQURN
+SU5JU1RSQURPUiBERVBBUlRBTUVOVE8gREUgRkFDVFVSQUNJT04wGwYKKwYBBAGCqDsDBwQNEwtC
+RU5JR08gTUFMTzAZBgorBgEEAYKoOwMIBAsTCTA3MjgzMTkwMDAWBgorBgEEAYKoOwMJBAgTBkN1
+ZW5jYTAXBgorBgEEAYKoOwMMBAkTB0VDVUFET1IwIAYKKwYBBAGCqDsDMwQSExBTT0ZUV0FSRS1B
+UkNISVZPMB0GA1UdEQQWMBSBEmdsZW9uQGV0YXBhLm5ldC5lYzCCAeEGA1UdHwSCAdgwggHUMIIB
+0KCCAcygggHIhoHWbGRhcDovL2JjZXFsZGFwc3VicDEuYmNlLmVjL2NuPUNSTDE0NTcsY249QUMl
+MjBCQU5DTyUyMENFTlRSQUwlMjBERUwlMjBFQ1VBRE9SLGw9UVVJVE8sb3U9RU5USURBRCUyMERF
+JTIwQ0VSVElGSUNBQ0lPTiUyMERFJTIwSU5GT1JNQUNJT04tRUNJQkNFLG89QkFOQ08lMjBDRU5U
+UkFMJTIwREVMJTIwRUNVQURPUixjPUVDP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZYY0
+aHR0cDovL3d3dy5lY2kuYmNlLmVjL0NSTC9lY2lfYmNlX2VjX2NybGZpbGVjb21iLmNybKSBtjCB
+szELMAkGA1UEBhMCRUMxIjAgBgNVBAoTGUJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxNzA1BgNV
+BAsTLkVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTi1FQ0lCQ0UxDjAMBgNV
+BAcTBVFVSVRPMSUwIwYDVQQDExxBQyBCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMRAwDgYDVQQD
+EwdDUkwxNDU3MCsGA1UdEAQkMCKADzIwMjIwNDIyMTkwNTAyWoEPMjAyNDA0MjIxOTM1MDJaMB8G
+A1UdIwQYMBaAFEii3yMfHfgsUXqMA81JMqUJwZSrMB0GA1UdDgQWBBT3jsFgFMs0irjUJuNU9d79
+sDnObzAJBgNVHRMEAjAAMBkGCSqGSIb2fQdBAAQMMAobBFY4LjEDAgSwMA0GCSqGSIb3DQEBCwUA
+A4ICAQB0yhEDCoZzRBhf/znUusVVOm0i8DOZP4w60llizBRgDKRdw229+IRqXs3nPigTfaGd4X68
++2uCdwamAnJSYYgwqI+Sv0YP1fjUbEkcSmNFxoWxTD0zTdQrHefm47aGB67iPZBMGEu/jPuW8zVI
+O6uJaS1vyOttUWrghg3AhXWVeoGaqeReysaAXXHdcAQUDIa6lX3zVvxT8FOtZBRmgQts81obEKvm
+pOm9mszp8btegBGm9N7dTcIB2Sff4dYyo4pgD9iOJd1R2hpX6SfQc44eiBfMbGRvLbE2AXzK2/MC
+9+++tw0iJHOXeeRLelFmXzT89KGeWaH1hDsVF1xrrBPAdXUeiwwe+arR2hhni2NQNny7MeeV78Ye
+olu4W/GLXzSfwmwyDNG23ltgQnqkCnahUq5j7/G5smLzI5buFZez1tACrJA2qw8UFoHI9MQfyK0n
+Y07+cIBx3AJXALSJ7jWzFAchEhjVNwTG1GnWkKxZxG5YAm3JgozuXiq/8Hjm5J6ZU/R8DQSKpjn6
+it98SbnnMnxau7qT3KW9bJe0vJCESPwWuYc+5kKVKRvmyBGztczo9M0ob67CvKjkG3ox+Hu0G5oS
+ofFybWUxE7dHP7DDmYGeuX7aAyRF5JO5+bYDRVWgM3z0mRvRQ0mBvO+urtJhYDAkNbAhqR6/5aFZ
+w1Tc5w==
+&lt;/ds:X509Certificate&gt;
+&lt;/ds:X509Data&gt;
+&lt;ds:KeyValue&gt;
+&lt;ds:RSAKeyValue&gt;
+&lt;ds:Modulus&gt;
+p+lFGFinWy2Yw1vfKx9Ta78TjRQgjsWqKcVzC3bUPavdFbo9xtoBoUWlFJYKZO+mBOnw4RsKQ2KH
+rXvLOd0SCpPb62pUzgKHGpQizyTK1LFxZd3+bXiL6nap9+mM+HNsBl0M9EjPBj9m2VTfQD/V/Cyt
+/uRhnVfcT0D7RawKNUuFikTu5+EZYfdhUWpz8ik6g2q/KWCTFn5X0US6DjwBaeRTUzMuamlk/CXp
+1hsyPn2RrRksnQnpYkdI7FlBi+DkxJTwlPPvxl9dGO2/jEhBwVTJOMnRn5PMFjHbcslhuL2T1yCk
+9jazLPh2LK4GPoiX6sQEe33DYuJDxSBnUVT37w==
+&lt;/ds:Modulus&gt;
+&lt;ds:Exponent&gt;AQAB&lt;/ds:Exponent&gt;
+&lt;/ds:RSAKeyValue&gt;
+&lt;/ds:KeyValue&gt;
+&lt;/ds:KeyInfo&gt;
+&lt;ds:Object Id="Signature952736-Object609815"&gt;&lt;etsi:QualifyingProperties Target="#Signature952736"&gt;&lt;etsi:SignedProperties Id="Signature952736-SignedProperties180642"&gt;&lt;etsi:SignedSignatureProperties&gt;&lt;etsi:SigningTime&gt;2023-01-05T06:18:04-05:00&lt;/etsi:SigningTime&gt;&lt;etsi:SigningCertificate&gt;&lt;etsi:Cert&gt;&lt;etsi:CertDigest&gt;&lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;&lt;ds:DigestValue&gt;L+CoJHsID5JYn7OJVwZ6HpON3EM=&lt;/ds:DigestValue&gt;&lt;/etsi:CertDigest&gt;&lt;etsi:IssuerSerial&gt;&lt;ds:X509IssuerName&gt;CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC&lt;/ds:X509IssuerName&gt;&lt;ds:X509SerialNumber&gt;1533842371&lt;/ds:X509SerialNumber&gt;&lt;/etsi:IssuerSerial&gt;&lt;/etsi:Cert&gt;&lt;/etsi:SigningCertificate&gt;&lt;/etsi:SignedSignatureProperties&gt;&lt;etsi:SignedDataObjectProperties&gt;&lt;etsi:DataObjectFormat ObjectReference="#Reference-ID-716163"&gt;&lt;etsi:Description&gt;contenido comprobante&lt;/etsi:Description&gt;&lt;etsi:MimeType&gt;text/xml&lt;/etsi:MimeType&gt;&lt;/etsi:DataObjectFormat&gt;&lt;/etsi:SignedDataObjectProperties&gt;&lt;/etsi:SignedProperties&gt;&lt;/etsi:QualifyingProperties&gt;&lt;/ds:Object&gt;&lt;/ds:Signature&gt;&lt;/factura&gt;</comprobante><mensajes /></autorizacion>
