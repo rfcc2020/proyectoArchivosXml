@@ -74,7 +74,7 @@ def uploadFile(request):
                     fac='001-77'+datosinforme[0][0]
                     if tel != '2477070': 
                         tel='7-'+ datosinforme[0][1]
-                    print('telefono encontrado cnt: ', datosinforme[0][1])
+                    #print('telefono encontrado cnt: ', datosinforme[0][1])
                     archivo = 'media/CUADRO CNT OCT.xlsx'
                     df2=cargarBaseDatos(archivo)
                     datosEstaticos=buscarDatosEstaticos(datosinforme[0][1],df2)
@@ -172,7 +172,7 @@ def recorrer(child):
         recorrer(child2)
 
 def generarDatosInforme(archivo):
-    print(archivo.name)
+    #print(archivo.name)
     tree = ET.parse(archivo)
     root = tree.getroot()
     listaInforme=[]
@@ -203,9 +203,9 @@ def generarDatosInforme(archivo):
         listaInforme.append([secuencial,telefono,total,instalacion,institucion,rucEmisor])  
         elementos.pop('comprobante')
         df=pd.DataFrame(elementos.items())
-        print(listaInforme)
+        #print(listaInforme)
     else:
-        print('sin elementos')
+        #print('sin elementos')
         listaInforme.append(['sin datos','',0])  
         df=pd.DataFrame(elementos.items())
     return listaInforme,df
@@ -270,7 +270,7 @@ def generarInformeExcelEtapa(request):
         return render(request,'home.html')
     
 def formatoArchivo(archivo):
-    print(archivo)
+    #print(archivo)
     tree = ET.parse('media/UploadedFiles/'+archivo)
     out = open('media/UploadedFiles/'+archivo, 'wb')
     out.write(b'<?xml version="1.0" encoding="utf-8" standalone = "yes"?>\n')
