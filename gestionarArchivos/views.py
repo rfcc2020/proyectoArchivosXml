@@ -46,7 +46,6 @@ def uploadFile(request):
             # Fetching the form data
             uploadedFiles = request.FILES.getlist("uploadedFile")
             for uploadedFile in uploadedFiles:
-                elementos={}
                 fileTitle = os.path.split(uploadedFile.name)[1]#request.POST["fileTitle"]
 
                 datosinforme,df=generarDatosInforme(uploadedFile)
@@ -117,6 +116,7 @@ def uploadFile(request):
                 personaEncargada=person
                 )
                 document.save()
+                #print(elementos.keys())
 
                 #df = procesar(document.uploadedFile)
                 #convertir_excel(df,'media/'+fileTitle)
@@ -324,22 +324,22 @@ def CDATA(text=None):
     return element
 
 ET._original_serialize_xml = ET._serialize_xml
-
 def _serialize_xml(write, elem, qnames, namespaces,short_empty_elements, **kwargs):
-
     if elem.tag == '![CDATA[':
         write("\n<{}{}]]>\n".format(elem.tag, elem.text))
         if elem.tail:
             write(ET._escape_cdata(elem.tail))
     else:
         return ET._original_serialize_xml(write, elem, qnames, namespaces,short_empty_elements, **kwargs)
-
 ET._serialize_xml = ET._serialize['xml'] = _serialize_xml
 
+
+
 def agregarFacturaEtapa(archivo):
+
+    
     tree = ET.parse(archivo)
     root = tree.getroot()
-    listaInforme=[]
     recorrer(root)
     if 'comprobante' in elementos:
         elementocomprobante = ET.fromstring(elementos['comprobante'])
@@ -366,20 +366,20 @@ def agregarFacturaEtapa(archivo):
         rtibi = ET.SubElement(rtimp,'baseImponible')
         rtival = ET.SubElement(rtimp,'valor')  
         elementocomprobante[2].append(eRT)
-    for i in root:
-        if i.tag == 'comprobante':
-            root.remove(i)
+        
+        for i in root:
+            if i.tag == 'comprobante':
+                root.remove(i)
+        strComprobante = ET.tostring(elementocomprobante, encoding='unicode', method='xml')
+        etComprobante = ET.Element('comprobante')
 
-    strComprobante = ET.tostring(elementocomprobante, encoding='unicode', method='xml')
-    etComprobante = ET.Element('comprobante')
+        cdata = CDATA(strComprobante)
+        
 
-    cdata = CDATA(strComprobante)
+        etComprobante.append(cdata)
 
-    etComprobante.append(cdata)
-
-    root.append(etComprobante)
-    NewXML=archivo.name
-    out = open('media/UploadedFiles/'+NewXML, 'wb')
-    out.write(b'<?xml version="1.0" encoding="unicode" standalone = "yes"?>\n')
-    tree.write(out,encoding='unicode', xml_declaration=True, default_namespace=None, method='xml', short_empty_elements=True)
-    out.close()
+        root.append(etComprobante)
+        NewXML=archivo.name
+        out = open('media/'+ NewXML, 'wb')
+        out.write(b'<?xml version="1.0" encoding="UTF-8" standalone = "yes"?>\n')
+        tree.write(out,encoding='UTF-8', xml_declaration=False, default_namespace=None, method='xml', short_empty_elements=True)

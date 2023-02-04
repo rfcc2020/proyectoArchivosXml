@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<autorizacion><estado>AUTORIZADO</estado><numeroAutorizacion>0501202301016005002000120010030401597671021201516</numeroAutorizacion><fechaAutorizacion>2023-01-05T07:22:07</fechaAutorizacion><ambiente>PRODUCCIÓN</ambiente><comprobante><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<factura id="comprobante" version="2.1.0">
+<?xml version="1.0" encoding="UTF-8" standalone = "No"?>
+<autorizacion><estado>AUTORIZADO</estado><numeroAutorizacion>0501202301016005002000120010030401598521021201518</numeroAutorizacion><fechaAutorizacion>2023-01-05T07:22:18</fechaAutorizacion><ambiente>PRODUCCIÓN</ambiente><mensajes /><comprobante>
+<![CDATA[<factura xmlns:ns0="http://www.w3.org/2000/09/xmldsig#" xmlns:ns1="http://uri.etsi.org/01903/v1.3.2#" id="comprobante" version="2.1.0">
 	<infoTributaria>
 		<ambiente>2</ambiente>
 		<tipoEmision>1</tipoEmision>
 		<razonSocial>EMPRESA PÚBLICA MUNICIPAL DE TELECOMUNICACIONES, AGUA POTABLE, ALCANTARILLADO Y SANEAMIENTO DE CUENCA - ETAPA EP</razonSocial>
 		<ruc>0160050020001</ruc>
-		<claveAcceso>0501202301016005002000120010030401597671021201516</claveAcceso>
+		<claveAcceso>0501202301016005002000120010030401598521021201518</claveAcceso>
 		<codDoc>01</codDoc>
 		<estab>001</estab>
 		<ptoEmi>003</ptoEmi>
-		<secuencial>040159767</secuencial>
+		<secuencial>040159852</secuencial>
 		<dirMatriz>BENIGNO MALO 7-78 Y MARISCAL SUCRE</dirMatriz>
 	</infoTributaria>
 	<infoFactura>
@@ -21,24 +21,24 @@
 		<razonSocialComprador>EMPRESA ELECTRICA REGIONAL CENTRO SUR C.A.</razonSocialComprador>
 		<identificacionComprador>0190003809001</identificacionComprador>
 		<direccionComprador>GRAL.ARTIGAS S-N Y AV. PUMAPUNGO</direccionComprador>
-		<totalSinImpuestos>659.99</totalSinImpuestos>
+		<totalSinImpuestos>9.99</totalSinImpuestos>
 		<totalDescuento>0.00</totalDescuento>
 		<totalConImpuestos>
 			<totalImpuesto>
 				<codigo>2</codigo>
 				<codigoPorcentaje>2</codigoPorcentaje>
-				<baseImponible>659.99</baseImponible>
+				<baseImponible>9.99</baseImponible>
 				<tarifa>12</tarifa>
-				<valor>79.20</valor>
+				<valor>1.20</valor>
 			</totalImpuesto>
 		</totalConImpuestos>
 		<propina>0.00</propina>
-		<importeTotal>739.19</importeTotal>
+		<importeTotal>11.19</importeTotal>
 		<moneda>DOLAR</moneda>
 		<pagos>
 			<pago>
 				<formaPago>20</formaPago>
-				<total>739.19</total>
+				<total>11.19</total>
 			</pago>
 		</pagos>
 	</infoFactura>
@@ -51,7 +51,7 @@
 			<descuento>0.00</descuento>
 			<precioTotalSinImpuesto>9.99</precioTotalSinImpuesto>
 			<detallesAdicionales>
-				<detAdicional nombre="unidad" valor="MES"/>
+				<detAdicional nombre="unidad" valor="MES" />
 			</detallesAdicionales>
 			<impuestos>
 				<impuesto>
@@ -63,48 +63,49 @@
 				</impuesto>
 			</impuestos>
 		</detalle>		
-	</detalles>
+	<detalle><codigoPrincipal>  </codigoPrincipal><descripcion>Recaudacion Tercero</descripcion><cantidad>1</cantidad><precioUnitario>13.1500</precioUnitario><descuento>0</descuento><precioTotalSinImpuesto>13.1500</precioTotalSinImpuesto><detallesAdicionales><detAdicional nombre='unidad' valor='MES' /></detallesAdicionales><impuestos><impuesto><codigo /><codigoPorcentaje /><tarifa /><baseImponible /><valor /></impuesto></impuestos></detalle></detalles>
 	<infoAdicional>
 		<campoAdicional nombre="FechaMaxPago">01/02/2023</campoAdicional>
 		<campoAdicional nombre="Consumo">Servicio de Telefonía Fija Diciembre de 2022</campoAdicional>
-		<campoAdicional nombre="Instalacion">T0193134</campoAdicional>
-		<campoAdicional nombre="RecaudacionTercero">33,15</campoAdicional>
-		<campoAdicional nombre="Telefono">4135521</campoAdicional>
-		<campoAdicional nombre="Dir Instal">MAX UHLE  Y AV. PUMAPUNGO</campoAdicional>
+		<campoAdicional nombre="Instalacion">T0193976</campoAdicional>
+		<campoAdicional nombre="RecaudacionTercero">13,15</campoAdicional>
+		<campoAdicional nombre="Telefono">2856353</campoAdicional>
+		<campoAdicional nombre="Dir Instal">TARQUINO CORDERO LEON  Y MANUEL ARTURO CISNEROS</campoAdicional>
+		<campoAdicional nombre="Fec. Contrato">15/04/2021 Fec. Instal.: 05/05/2021</campoAdicional>
 		<campoAdicional nombre="MSG ARCOTEL">Para la atención de reclamos en Telecomunicaciones NO resueltos por el prestador, ingrese su reclamo al link: http://reclamoconsumidor.arcotel.gob.ec/osTicket/, o para información comuníquese con el número telefónico 1800 567 567.</campoAdicional>
 		<campoAdicional nombre="MSG:">Para información y reclamos favor comuníquese al Contact Center de ETAPA EP, marcando al número 100. Descargue sus documentos electrónicos de www.etapa.net.ec</campoAdicional>
 		<campoAdicional nombre="MENSAJE">ACTUALIZA TUS DATOS LLAMANDO AL 100 O 2834700</campoAdicional>
 	</infoAdicional>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature952736">
-<ds:SignedInfo Id="Signature-SignedInfo793213">
-<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-<ds:Reference Id="SignedPropertiesID502258" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature952736-SignedProperties180642">
-<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>bN27rDcYJa+10kM2gBTCWzIrym4=</ds:DigestValue>
-</ds:Reference>
-<ds:Reference URI="#Certificate1695829">
-<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>xArHY2aOc0eLuo/byb2m8XSTKtw=</ds:DigestValue>
-</ds:Reference>
-<ds:Reference Id="Reference-ID-716163" URI="#comprobante">
-<ds:Transforms>
-<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-</ds:Transforms>
-<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>Q6/o92K5HaeCSUKXe0xCQQ3Bf3s=</ds:DigestValue>
-</ds:Reference>
-</ds:SignedInfo>
-<ds:SignatureValue Id="SignatureValue343244">
-oR6K4scz/aGdDPWrDIMYz990eVM1q25cl/PIzZzQ7igXlIdKd/ZGW5r1s2otyCa0i+JMMMkiW1ga
-r647OGRKqt6u6ot1Jfmy1cuRak6Ud9wHQ+2ZrDV+kf8Is46UxgGgqOE/YJr6ylYwfw8wvhmQKK/C
-D8/KqA4MEd4aXgVzrQ7JX+rWDPu19vndYfuzKHi0Os6OLZoYg0xzOV5NNAufzGMYdllJluKr3Ohg
-qGKB9tqdWumJt8OLPXI9SyOOpVigh5GOJB8eHgxGHGL6g67opAtA1yW/aNIAKMpYTxhvin3vni+P
-HnRSi36P7MToJOd3FyAyrUjndvMD+ypNY7d+Bw==
-</ds:SignatureValue>
-<ds:KeyInfo Id="Certificate1695829">
-<ds:X509Data>
-<ds:X509Certificate>
+<ns0:Signature Id="Signature635956">
+<ns0:SignedInfo Id="Signature-SignedInfo335671">
+<ns0:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+<ns0:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+<ns0:Reference Id="SignedPropertiesID876175" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature635956-SignedProperties71172">
+<ns0:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<ns0:DigestValue>trjcZmiQdche1OPE5Mx1XUnyxXo=</ns0:DigestValue>
+</ns0:Reference>
+<ns0:Reference URI="#Certificate1418646">
+<ns0:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<ns0:DigestValue>V7+mqH2ZsiS3y1Vdz7gqXPxcJvg=</ns0:DigestValue>
+</ns0:Reference>
+<ns0:Reference Id="Reference-ID-338596" URI="#comprobante">
+<ns0:Transforms>
+<ns0:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+</ns0:Transforms>
+<ns0:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<ns0:DigestValue>ya6OwMk3c20K8UFh+UlHawhxhzo=</ns0:DigestValue>
+</ns0:Reference>
+</ns0:SignedInfo>
+<ns0:SignatureValue Id="SignatureValue481507">
+C3CppiqLQ+lz1a5KGVTAcsaJpYi7S9L+UOO1TIgcigtErGudneIpvqu1aAj++rj5uOWUw9ou6PMH
+0qhx+0uYKHU1tluwGAAQNobuh0QYhj6UhWM41FyJE4jlvAmb6HzuPBnQ+myXyWZclPyJ0zTVkT8n
+TX5+EqN7xtdXTrojtA7Usxs8+ReLCf2dEIvLcjl5/KVaKC3CFlbpQ4iWroizSAhPePWDUuHboId2
+NCUwugwyxjqPSzIIYJQY/50p1MmKy7gzs5Aztek39r9qC1oqkpYx8vf8N1GMkSxRYsG4hvUhnQ+Y
+6TqyePYydz/JgtVcGXx3Pq0AcsLNOm3qnDWVkg==
+</ns0:SignatureValue>
+<ns0:KeyInfo Id="Certificate1418646">
+<ns0:X509Data>
+<ns0:X509Certificate>
 MIIKPjCCCCagAwIBAgIEW2yTwzANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
 BAoTGUJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxNzA1BgNVBAsTLkVOVElEQUQgREUgQ0VSVElG
 SUNBQ0lPTiBERSBJTkZPUk1BQ0lPTi1FQ0lCQ0UxDjAMBgNVBAcTBVFVSVRPMSUwIwYDVQQDExxB
@@ -152,19 +153,20 @@ Y07+cIBx3AJXALSJ7jWzFAchEhjVNwTG1GnWkKxZxG5YAm3JgozuXiq/8Hjm5J6ZU/R8DQSKpjn6
 it98SbnnMnxau7qT3KW9bJe0vJCESPwWuYc+5kKVKRvmyBGztczo9M0ob67CvKjkG3ox+Hu0G5oS
 ofFybWUxE7dHP7DDmYGeuX7aAyRF5JO5+bYDRVWgM3z0mRvRQ0mBvO+urtJhYDAkNbAhqR6/5aFZ
 w1Tc5w==
-</ds:X509Certificate>
-</ds:X509Data>
-<ds:KeyValue>
-<ds:RSAKeyValue>
-<ds:Modulus>
+</ns0:X509Certificate>
+</ns0:X509Data>
+<ns0:KeyValue>
+<ns0:RSAKeyValue>
+<ns0:Modulus>
 p+lFGFinWy2Yw1vfKx9Ta78TjRQgjsWqKcVzC3bUPavdFbo9xtoBoUWlFJYKZO+mBOnw4RsKQ2KH
 rXvLOd0SCpPb62pUzgKHGpQizyTK1LFxZd3+bXiL6nap9+mM+HNsBl0M9EjPBj9m2VTfQD/V/Cyt
 /uRhnVfcT0D7RawKNUuFikTu5+EZYfdhUWpz8ik6g2q/KWCTFn5X0US6DjwBaeRTUzMuamlk/CXp
 1hsyPn2RrRksnQnpYkdI7FlBi+DkxJTwlPPvxl9dGO2/jEhBwVTJOMnRn5PMFjHbcslhuL2T1yCk
 9jazLPh2LK4GPoiX6sQEe33DYuJDxSBnUVT37w==
-</ds:Modulus>
-<ds:Exponent>AQAB</ds:Exponent>
-</ds:RSAKeyValue>
-</ds:KeyValue>
-</ds:KeyInfo>
-<ds:Object Id="Signature952736-Object609815"><etsi:QualifyingProperties Target="#Signature952736"><etsi:SignedProperties Id="Signature952736-SignedProperties180642"><etsi:SignedSignatureProperties><etsi:SigningTime>2023-01-05T06:18:04-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>L+CoJHsID5JYn7OJVwZ6HpON3EM=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1533842371</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-716163"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></factura>]]></comprobante><mensajes /></autorizacion>
+</ns0:Modulus>
+<ns0:Exponent>AQAB</ns0:Exponent>
+</ns0:RSAKeyValue>
+</ns0:KeyValue>
+</ns0:KeyInfo>
+<ns0:Object Id="Signature635956-Object742560"><ns1:QualifyingProperties Target="#Signature635956"><ns1:SignedProperties Id="Signature635956-SignedProperties71172"><ns1:SignedSignatureProperties><ns1:SigningTime>2023-01-05T06:18:13-05:00</ns1:SigningTime><ns1:SigningCertificate><ns1:Cert><ns1:CertDigest><ns0:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns0:DigestValue>L+CoJHsID5JYn7OJVwZ6HpON3EM=</ns0:DigestValue></ns1:CertDigest><ns1:IssuerSerial><ns0:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ns0:X509IssuerName><ns0:X509SerialNumber>1533842371</ns0:X509SerialNumber></ns1:IssuerSerial></ns1:Cert></ns1:SigningCertificate></ns1:SignedSignatureProperties><ns1:SignedDataObjectProperties><ns1:DataObjectFormat ObjectReference="#Reference-ID-338596"><ns1:Description>contenido comprobante</ns1:Description><ns1:MimeType>text/xml</ns1:MimeType></ns1:DataObjectFormat></ns1:SignedDataObjectProperties></ns1:SignedProperties></ns1:QualifyingProperties></ns0:Object></ns0:Signature></factura>]]>
+</comprobante></autorizacion>
