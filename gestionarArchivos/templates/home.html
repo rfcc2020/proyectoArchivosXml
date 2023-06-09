@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Inicio</h2>
+<h2 class="text text-primary">Inicio</h2>
 <p>Bienvenido, {% if user.is_authenticated %} <strong>{{ user.username }} {{user.id}} {% else %} visitante {% endif %}</strong> </p>
 <p>
     <strong>Total de usuarios registrados: </strong>{{ count }}

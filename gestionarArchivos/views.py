@@ -43,88 +43,91 @@ def signup(request):
 def uploadFile(request):
     if request.user.is_authenticated:
         if request.method == "POST":
-            # Fetching the form data
-            uploadedFiles = request.FILES.getlist("uploadedFile")
-            for uploadedFile in uploadedFiles:
-                fileTitle = os.path.split(uploadedFile.name)[1]#request.POST["fileTitle"]
+            try:
+                # Fetching the form data
+                uploadedFiles = request.FILES.getlist("uploadedFile")
+                for uploadedFile in uploadedFiles:
+                    fileTitle = os.path.split(uploadedFile.name)[1]#request.POST["fileTitle"]
 
-                datosinforme,df=generarDatosInforme(uploadedFile)
-                datosEstaticos=[]
-                archivo = 'media/CUADRO CNT OCT.xlsx'
-                df2=cargarBaseDatos(archivo)
-                datosEstaticos=buscarDatosEstaticos(datosinforme[0][1],df2)  
-                
-                tel=datosinforme[0][1]
-                tot=datosinforme[0][2]
-
-                numInst=datosinforme[0][3]
-                nomInst=datosinforme[0][4]
-                ruc=datosinforme[0][5]
-
-                prov=''
-                cant=''
-                lug=''
-                dir=''
-                ncur=''
-                person=''
-
-                datosEstaticos=[]
-                if ruc=='1768152560001':
-                    fac='001-77'+datosinforme[0][0]
-                    if tel != '2477070': 
-                        tel='7-'+ datosinforme[0][1]
-                    #print('telefono encontrado cnt: ', datosinforme[0][1])
+                    datosinforme,df=generarDatosInforme(uploadedFile)
+                    datosEstaticos=[]
                     archivo = 'media/CUADRO CNT OCT.xlsx'
                     df2=cargarBaseDatos(archivo)
-                    datosEstaticos=buscarDatosEstaticos(datosinforme[0][1],df2)
-                    if(len(datosEstaticos)>7):
-                        prov=datosEstaticos[6]
-                        cant=datosEstaticos[7]
-                        lug=datosEstaticos[8]
-                        dir=datosEstaticos[9]   
-            # Saving the information in the database
-                else:
-                    archivo = 'media/CUADRO NOV 2022.xlsx'
-                    fac='001-003-'+datosinforme[0][0]
-                    df2=cargarBaseDatos(archivo)
-                    datosEstaticos=buscarDatosEstaticos(numInst,df2)
-                    if(len(datosEstaticos)>7):
-                        ncur=datosEstaticos[5]
-                        valor=datosEstaticos[4]
-                        tot=float(tot)+float(valor)
-                        dir=datosEstaticos[8]
-                        person=datosEstaticos[6]
-                    else:
-                        prov=''
-                        cant=''
-                        lug=''
-                        dir=''
-                document = models.Document(
-                title = fileTitle,
-                uploadedFile = uploadedFile,
-                factura=fac,
-                telefono=tel,
-                total=tot,
-                provincia=prov,
-                canton=cant,
-                lugar=lug,
-                direccion=dir,
-                instalacion=numInst,
-                institucion=nomInst,
-                rucEmisor=ruc,
-                numeroCur=ncur,
-                personaEncargada=person
-                )
-                document.save()
-                #print(elementos.keys())
+                    datosEstaticos=buscarDatosEstaticos(datosinforme[0][1],df2)  
+                    
+                    tel=datosinforme[0][1]
+                    tot=datosinforme[0][2]
 
-                #df = procesar(document.uploadedFile)
-                #convertir_excel(df,'media/'+fileTitle)
-                #convertir_pdf(df,'media/'+fileTitle)
-                if 'RecaudacionTercero' in elementos.keys():
-                    agregarFacturaEtapa(document.uploadedFile)
-                else:
-                    formatoArchivo(uploadedFile.name)
+                    numInst=datosinforme[0][3]
+                    nomInst=datosinforme[0][4]
+                    ruc=datosinforme[0][5]
+
+                    prov=''
+                    cant=''
+                    lug=''
+                    dir=''
+                    ncur=''
+                    person=''
+
+                    datosEstaticos=[]
+                    if ruc=='1768152560001':
+                        fac='001-77'+datosinforme[0][0]
+                        if tel != '2477070': 
+                            tel='7-'+ datosinforme[0][1]
+                        #print('telefono encontrado cnt: ', datosinforme[0][1])
+                        archivo = 'media/CUADRO CNT OCT.xlsx'
+                        df2=cargarBaseDatos(archivo)
+                        datosEstaticos=buscarDatosEstaticos(datosinforme[0][1],df2)
+                        if(len(datosEstaticos)>7):
+                            prov=datosEstaticos[6]
+                            cant=datosEstaticos[7]
+                            lug=datosEstaticos[8]
+                            dir=datosEstaticos[9]   
+                # Saving the information in the database
+                    else:
+                        archivo = 'media/CUADRO NOV 2022.xlsx'
+                        fac='001-003-'+datosinforme[0][0]
+                        df2=cargarBaseDatos(archivo)
+                        datosEstaticos=buscarDatosEstaticos(numInst,df2)
+                        if(len(datosEstaticos)>7):
+                            ncur=datosEstaticos[5]
+                            valor=datosEstaticos[4]
+                            tot=float(tot)+float(valor)
+                            dir=datosEstaticos[8]
+                            person=datosEstaticos[6]
+                        else:
+                            prov=''
+                            cant=''
+                            lug=''
+                            dir=''
+                    document = models.Document(
+                    title = fileTitle,
+                    uploadedFile = uploadedFile,
+                    factura=fac,
+                    telefono=tel,
+                    total=tot,
+                    provincia=prov,
+                    canton=cant,
+                    lugar=lug,
+                    direccion=dir,
+                    instalacion=numInst,
+                    institucion=nomInst,
+                    rucEmisor=ruc,
+                    numeroCur=ncur,
+                    personaEncargada=person
+                    )
+                    document.save()
+                    #print(elementos.keys())
+
+                    #df = procesar(document.uploadedFile)
+                    #convertir_excel(df,'media/'+fileTitle)
+                    #convertir_pdf(df,'media/'+fileTitle)
+                    if 'RecaudacionTercero' in elementos.keys():
+                        agregarFacturaEtapa(document.uploadedFile)
+                    else:
+                        formatoArchivo(uploadedFile.name)
+            except:
+                print("Error")
 
             
 
@@ -383,3 +386,4 @@ def agregarFacturaEtapa(archivo):
         out = open('media/'+ NewXML, 'wb')
         out.write(b'<?xml version="1.0" encoding="UTF-8" standalone = "yes"?>\n')
         tree.write(out,encoding='UTF-8', xml_declaration=False, default_namespace=None, method='xml', short_empty_elements=True)
+        
